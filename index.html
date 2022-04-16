@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<label>BACKGROUND COLORS</label>
+<select id="bgcolors">
+    <option>BLUE</option>
+    <option>RED</option>
+    <option>GREEN</option>
+    <option>WHITE</option>
+</select>
+
+<label>TEXT COLORS</label>
+<select id="textcolors">
+    <option>BLUE</option>
+    <option>RED</option>
+    <option>GREEN</option>
+    <option>WHITE</option>
+</select>
+<br>
+<br>
+<br>
+<button type="button" onclick="changecolors()">CHANGE COLORS</button>
+
+<div id="firstdiv" class="divs">HELLO WORLD</div>
+
+
+<script>
+
+
+function changecolors() {
+
+
+var bgcolorvalue = document.getElementById("bgcolors").value;
+var textcolorvalue = document.getElementById("textcolors").value;
+
+document.getElementById("firstdiv").style.backgroundColor = bgcolorvalue ;
+document.getElementById("firstdiv").style.color = textcolorvalue ;
+
+
+
+}
+
+
+</script>
+
+
+</body>
+</html>
